@@ -12,7 +12,9 @@ const win_sequences = [
 const options = ['X', 'O'];
 var winner = '';
 var turn = 0;
+var plays = 0;
 var game_over = false;
+var game_drawly = false;
 var game = document.querySelector(".board");
 
 
@@ -35,13 +37,16 @@ function play(position) {
     if (board[position] != '') {
         return;
     }
+    plays++;
     board[position] = options[turn];
     draw_board();
     
     let check = check_win(board[position]);
-
     if(check >= 0){
-        // alert(`The ${board[position]}'s player is the winner!!!`);
+        alert_win();
+        return;
+    }else if(plays == 9){
+        game_drawly = true;
         alert_win();
         return;
     }
@@ -71,9 +76,11 @@ function check_win(symbol) {
 
 function alert_win() {
     const info_winner = document.querySelector("h2");
-    info_winner.innerText = `Jogador "${winner}" ganhou!!!`;
-    info_winner.style.marginTop = "5%";
-    info_winner.style.color = "var(--tic_tac_toe_color_font)";
+    if (game_drawly) {
+        info_winner.innerText = `Empate...`;
+    } else {
+        info_winner.innerText = `Jogador "${winner}" ganhou!!!`;
+    }
 
     const tic_tac_toe = document.querySelector(".game");
     tic_tac_toe.appendChild(info_winner);
@@ -81,6 +88,7 @@ function alert_win() {
 
 function restart() {
     game_over = false;
+    game_drawly = false;
     board.fill('');
     winner = '';
     turn = 0;
