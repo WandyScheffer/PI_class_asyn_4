@@ -1,0 +1,16 @@
+:root{
+    --tabuada_color_dark: #1a1f16;
+    --tabuada_color_semi_dark: #1e3f20;
+    --tabuada_color_one: #345830;
+    --tabuada_color_neutral: #4a7856;
+    --tabuada_color_light: #94ecbe;
+    --tabuada_color_font: #eefcf5;
+    
+    
+    --tic_tac_toe_color_dark: #1e1e24;
+    --tic_tac_toe_color_semi_dark: #444140;
+    --tic_tac_toe_color_one: #7e9181;
+    --tic_tac_toe_color_neutral: #a0aab2;
+    --tic_tac_toe_color_light: #c7cedb;
+    --tic_tac_toe_color_font: #f3f4f7;
+}
