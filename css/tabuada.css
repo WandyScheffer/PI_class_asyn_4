@@ -1,0 +1,51 @@
+fieldset{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--tabuada_color_semi_dark);
+    color: var(--tabuada_color_font);
+    height: 50vh;
+    width: 20vw;
+    margin-top: 10vh;
+    border: none;
+    border-radius: 5%;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.first_block{
+    width: 100%;
+}
+
+.second_block{
+    width: 100%;
+}
+
+input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+    width: 70%;
+    height: 1.3rem;
+    border: none;
+    border-radius: 5%;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+
+select{
+    width: 100%;
+}
+
+.button_tabuada{
+    background-color: var(--tabuada_color_neutral);
+    border: none;
+    border-radius: 20%;
+    width: 50%;
+    height: 10%;
+    cursor: pointer;
+    color: var(--tabuada_color_font);
+    font-weight: 800;
+}

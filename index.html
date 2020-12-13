@@ -15,10 +15,20 @@
         <h1>Tabuada</h1>
         <form action="">
             <fieldset>
-                <legend>teste</legend>
-                <label for="number">Número:</label>
-                <input type="number" name="number" id="">
-                <button type="button">Gerar tabuada</button>
+                <div class="first_block">
+                    <label for="number">Número:</label>
+                    <input type="number" name="number" id="" > 
+                </div>
+                
+                <div class="second_block">
+                    <label for="results">Resultado:</label>
+                    <select name="results" id="" size="10">
+                        <option value="">Digite um valor para gerar a tabuada...</option>
+                    </select>
+                </div>
+                    
+                    <button class="button_tabuada" type="button">Gerar tabuada</button>
+                
             </fieldset>
         </form>
     </div>
