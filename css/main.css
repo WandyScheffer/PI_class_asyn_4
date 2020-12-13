@@ -13,10 +13,10 @@ body{
 .tabuada{
     grid-area: 'tabuada';
     background-color: var(--tabuada_color_dark);
+    
+    /*  */
     flex-direction: column;
     align-items: center;
-
-    /*  */
     display: flex;
     height: 100vh;
     /*  */
@@ -35,9 +35,9 @@ body{
 .tic_tac_toe{
     grid-area: 'tic_tac_toe';
     background-color: var(--tic_tac_toe_color_dark);
-    justify-content: center;
-
     /*  */
+    flex-direction: column;
+    align-items: center;
     height: 100vh;
     display: flex;
     /*  */

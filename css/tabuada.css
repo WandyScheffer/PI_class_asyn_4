@@ -43,8 +43,8 @@ select{
     background-color: var(--tabuada_color_neutral);
     border: none;
     border-radius: 20%;
-    width: 50%;
-    height: 10%;
+    width: 8rem;
+    height: 3rem;
     cursor: pointer;
     color: var(--tabuada_color_font);
     font-weight: 800;
